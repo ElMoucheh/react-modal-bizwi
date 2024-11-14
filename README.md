@@ -7,12 +7,12 @@ A simple and reusable React modal component for displaying customizable modal wi
 
 ## Installation
 
-Install my-project with npm
+Install using npm:
 
 ```bash
   npm install react-modal-bizwi
 ```  
-Or
+Or with yarn:
 ```bash
   yarn add react-modal-bizwi
 ```
