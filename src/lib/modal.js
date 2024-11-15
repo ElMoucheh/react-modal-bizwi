@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './modal.scss';
 
-const Modal = ({ isOpen, onClose, children}) => {
+const Modal = ({ isOpen, onClose, children, style, className }) => {
   useEffect(() => {
     const handleEsc = (event) => {
       if (event.key === 'Escape' && isOpen) {
@@ -22,7 +22,7 @@ const Modal = ({ isOpen, onClose, children}) => {
 
   return (
     <div className="modal-overlay" onClick={handleClickOutside}>
-      <div className="modal">
+      <div className={`modal ${className || ''}`} style={style}>
         <div className="modal-content">
             <button className="close-modal" onClick={onClose} aria-label="Close modal">X</button>
             {children}
